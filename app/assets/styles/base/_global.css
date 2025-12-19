@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden; 
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-grey {
+    color: #474646;
+}
+
+.text-green, .text-white {
+    /*font-size: 125%;*/
+    font-size: 100%;
+}
+
+p {
+    font-size: 1.12rem;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+li {
+    font-size: 1.1rem;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.fa-li, .fa-clr {
+    font-size: 1.25rem;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    @mixin atMedium {
+        right: 30px;
+    }
+    z-index: 99;
+    font-size: 1.5rem;
+
+    a {
+       color: $white;
+    }
+}
+
+.map-section {
+    &__wrapper {
+        overflow: hidden;
+        resize: none;
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+#embed-map-canvas {
+    height: 100%; 
+    width: 100%;
+    max-width: 100%;
+
+    iframe {
+        height:100%;
+        width:100%;
+        border:0;
+    }
+}
