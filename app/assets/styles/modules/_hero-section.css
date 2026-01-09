@@ -1,0 +1,60 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: url('./assets/images/h1.jpg') no-repeat center;
+    background-size: cover;
+    object-fit: cover;
+    background-color: #f7dee9;
+    width: 100%;
+    height: 30vh;
+    @mixin atMedium {
+        height: 100vh;
+    }
+
+    &__title {
+        @mixin atMedium {
+            background: rgba($black, 0.5);
+            padding: 3rem;
+        }
+        text-align: center;
+        color: $white;
+        letter-spacing: 0.1rem;
+        font-size: 2.2rem;
+        @mixin atMedium {
+            font-size: 4.8rem;
+        }
+    }
+
+    img {
+        width: 180px;
+        transition: transform .3 ease-out;
+        animation: upDown 1000ms infinite;
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(-1rem)
+        }
+
+        50% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-1rem);
+        }
+    }
+
+    p {
+        color: $white;
+        position: absolute;
+        bottom: -2%;
+        text-align: center;
+    }
+}

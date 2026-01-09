@@ -1,0 +1,54 @@
+footer {
+    background: $white;
+    color: $black;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-evenly;
+    }    
+
+    &__logo {
+        width: 200px;
+        margin: 0 auto 1.5rem auto; 
+        @mixin atMedium {
+            margin: 0;
+        }
+    }
+}
+
+.footer > div {
+    margin-top: 2.5rem;
+    @mixin atMedium {
+        margin-top: 0;
+    }
+
+    p {
+        margin-top: 0.25rem;
+        @mixin atMedium {
+            margin-top: 1rem;
+        }
+
+        i {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.footer-text {
+    text-align: center;
+    padding: 20px;
+
+    p:first-child {
+        font-style: italic;
+    }
+}
+
+.fa-clr {
+    font-size: 1.8rem;
+    color: $black;
+}

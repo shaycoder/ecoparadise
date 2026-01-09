@@ -1,0 +1,74 @@
+#contact {
+    background: url('./assets/images/contact-bg.jpg') no-repeat center;
+    background-size: cover;
+
+    h2 {
+        font-size: 1.8rem;
+        @mixin atMedium {
+            font-size: 2.4rem;
+        }
+        text-align: center;
+        text-transform: uppercase;
+        margin: 3rem;
+        color: $white;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        @mixin atMedium {
+            width: 40vw;
+        }
+        margin-bottom: 1rem;
+
+        label {
+            padding: .75rem 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $white;
+            
+            @mixin atMedium {
+                font-size: 1.19rem;
+            }
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            padding: .70rem 1rem;
+            font-size: .95rem;
+
+            @mixin atMedium {
+                font-size: 1.1rem;
+                padding: .75rem 1.2rem;
+            }
+            border-radius: 5px;
+            
+        }
+
+        &__btn {
+            margin-top: 3rem;
+            background: $green;
+            padding: 0.7rem 1.6rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            transition: transform .5s ease-out;
+            cursor: pointer;
+            align-self: center;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

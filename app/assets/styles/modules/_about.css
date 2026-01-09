@@ -1,0 +1,19 @@
+.about {
+    background: #f7dee9;
+    color: $black;
+    &__title {
+        font-size: 1.3rem;
+        @mixin atMedium {
+            font-size: 2rem;
+            max-width: 800px;
+        }
+    }
+
+    &__img {
+        box-shadow: 0 0 10px rgba($black, .8);
+    }
+}
+
+.bg-about {
+    background: #f7f7f7;
+}

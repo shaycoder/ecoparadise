@@ -1,0 +1,32 @@
+.services {
+    /*background: $black;*/    
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: $black;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $black;
+    }
+
+    img {
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        &:hover {
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+            transform: translateY(-5px);
+        }
+    }
+}
