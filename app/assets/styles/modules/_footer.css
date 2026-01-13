@@ -46,6 +46,11 @@ footer {
     p:first-child {
         font-style: italic;
     }
+
+    img {
+         width: 100px;
+         margin-inline: 1rem;
+    }
 }
 
 .fa-clr {

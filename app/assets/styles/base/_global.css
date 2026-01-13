@@ -175,3 +175,31 @@ li {
         }
     }
 }
+
+.booking-partners {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    div {
+        @mixin atMedium {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            @mixin forSmall {
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 120px;
+            @mixin forSmall {
+                display: block;
+                margin: 2rem auto;
+            }
+        }
+    }
+}
