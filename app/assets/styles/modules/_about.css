@@ -12,6 +12,12 @@
     &__img {
         box-shadow: 0 0 10px rgba($black, .8);
     }
+
+    video {
+        @mixin forSmall {
+            margin-block: 1.2rem;
+        }
+    }
 }
 
 .bg-about {

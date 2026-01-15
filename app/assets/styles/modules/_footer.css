@@ -41,11 +41,10 @@ footer {
 
 .footer-text {
     text-align: center;
-    padding: 20px;
 
-    p:first-child {
+    /*p:first-child {
         font-style: italic;
-    }
+    }*/
 
     img {
          width: 100px;
