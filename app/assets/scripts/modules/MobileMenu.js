@@ -1,8 +1,9 @@
 class MobileMenu {
     constructor() {
         this.menuIcon = document.querySelector('.site-header__menu-icon')
+        this.menuContent = document.querySelector('.site-header__nav')
         this.menuHeader = document.querySelector('.site-header')
-        this.menuElement = document.querySelectorAll('.menu-element')
+        this.menuElement = document.querySelectorAll('.menu-element, .wrapper')
         this.events()
     }
 
@@ -16,14 +17,13 @@ class MobileMenu {
     }
 
     removeTheMenu() {
-        this.menuHeader.classList.remove('site-header--hide')
-        this.menuHeader.classList.remove('site-header--is-visible')
+        this.menuContent.classList.remove('site-header__nav--is-visible')
         this.menuHeader.classList.remove('site-header--is-expanded')
         this.menuIcon.classList.remove('site-header__menu-icon--close-x')
     }
 
     toggleTheMenu() {
-        this.menuHeader.classList.toggle('site-header--is-visible')
+        this.menuContent.classList.toggle('site-header__nav--is-visible')
         this.menuHeader.classList.toggle('site-header--is-expanded')
         this.menuIcon.classList.toggle('site-header__menu-icon--close-x')
     }

@@ -5,7 +5,7 @@ import { Carousel } from 'bootstrap';
 
 import AOS from 'aos';
 
-// new MobileMenu();
+let mobileMenu = new MobileMenu();
 
 const carouselEl = document.querySelector('#carouselEcoParadise');
 if(carouselEl) {
