@@ -73,7 +73,21 @@ li {
     font-size: 1.5rem;
 
     a {
-       color: $green;
+       color: $pink;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    @mixin atMedium {
+        right: 30px;
+    }
+    z-index: 99;
+    font-size: 1.8rem;
+    a {
+        color: $green;
     }
 }
 
